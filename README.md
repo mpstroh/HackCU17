@@ -1,0 +1,10 @@
+This is the android portion of the app we worked on at Hack CU 2017. 
+
+The problem we are trying to address is the lack of data and information coming out of countries where there is cencorship and internet shut downs. These places are often occupied by military and have all sorts of problems with violence and human rights violations. How can you collect lots of data to be shared with the world without any internet?
+
+Our solution to this problem is to send information using SMS on smart phones. Of course, this relies on the assumption that people have smart phones and the gov doesn't just shut down phone communication. We want a mobile app that sends sms in a controlled format with coded information. Information we would like to collect includes location, several options that they can check (such as assault, road block, sexual violence, etc), date, time,  and their own description of the incident that they are reporting. Each of the options they can check would be represented by a 0 or 1 in the string of characters sent in the sms. The point is to pack as much information into the 160 character sms limit as possible. All the user has to do is pick a few options and write some text into a textbox. The app does the rest. A server with a sim card dongle would recieve these coded messages and organize them into a database. We haven't figured out how to get this database out of the country yet, but we'd like to have a website that takes the data from the database and puts everything onto a map.
+
+Obviously this is a huge project that would take a lot of people to put into actual use and there are still lots of problems we haven't worked out yet. The hope is that we can give this idea to someone who with more technical knowledge and ideas of how to make this work.
+
+At the Hack CU event we really stuggled to get the app working because we are very new to Android development. In it's current state, it is pretty worthless. We also wrote a python script (not on github yet) that organizes text from .txt files into an excel spreadsheet as they are added to a folder. 
+
