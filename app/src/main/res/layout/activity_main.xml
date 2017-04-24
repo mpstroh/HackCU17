@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:hint="Enter Phone Number"
+        android:phoneNumber="true"
+        android:textColorHint="@color/abc_primary_text_material_dark"
+        android:layout_marginTop="88dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:textColorHint="@color/abc_primary_text_material_dark"
+        android:hint="Enter SMS"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/editText"
+        android:layout_alignEnd="@+id/btnSendSMS" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Sms"
+        android:id="@+id/btnSendSMS"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp" />
+
+    <CheckBox
+        android:id="@+id/RoadBlockCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/AssaultCheckBox"
+        android:layout_below="@+id/btnSendSMS"
+        android:layout_marginTop="13dp"
+        android:text="Road Block" />
+
+    <CheckBox
+        android:id="@+id/AssaultCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RoadBlockCheckBox"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="18dp"
+        android:layout_toStartOf="@+id/btnSendSMS"
+        android:text="Assault" />
+
+    <Button
+        android:id="@+id/addToString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/AssaultCheckBox"
+        android:layout_below="@+id/AssaultCheckBox"
+        android:layout_marginTop="14dp"
+        android:text="add" />
+
+</RelativeLayout>
